@@ -1,0 +1,2 @@
+automation='C:\\Users\\pavan.vasant\\billing_reports\\billing_reports\\NOCVue\\reports\\src\\billing_py\\automation_billing\\'
+npca_cli='C:\\Users\\pavan.vasant\\billing_reports\\billing_reports\\NOCVue\\reports\\src\\billing_py\\npca_cli_billing\\'
