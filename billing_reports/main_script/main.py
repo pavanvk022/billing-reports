@@ -12,7 +12,7 @@ if __name__ == '__main__':
         if len(sys.argv) != 3:
             print("Usage: 'python main_script.py' <'month'> <'year'> ")
             sys.exit(1)
-
+        print(sys.argv[1], sys.argv[2])
         month ,year = sys.argv[1], sys.argv[2]
 
         if not (month.isalpha() and len(month) == 3 and year.isnumeric() and len(year) == 4):
