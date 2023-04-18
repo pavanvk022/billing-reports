@@ -26,7 +26,8 @@ class Report_Generator:
         self.m, self.y,self.m1 ,self.day= Converter.mon_year(mon,year)
     def folder_check(self):
             try:
-            
+                self.file_path1_save=None
+                self.file_path2_save=None
 
                 if self.appli == 'lumen':
                     self.folder_path_extract = '{}/{}/{}/{}'.format(self.path2_extract_lumen,self.year,self.m1,self.extract_filename.format((self.appli).upper(),(self.m).upper(),self.day,self.year))
