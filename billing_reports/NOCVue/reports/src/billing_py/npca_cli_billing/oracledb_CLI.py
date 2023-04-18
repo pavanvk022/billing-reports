@@ -1,5 +1,5 @@
 import cx_Oracle
-import conf1_CLI
+import configuration_CLI as conf1_CLI
 import pandas as pd 
 class OracleDB:
     def __init__(self):

@@ -1,4 +1,4 @@
-import conf1_CLI
+import configuration_CLI as conf1_CLI
 import openpyxl
 import pandas as pd 
 from converter_CLI import *
