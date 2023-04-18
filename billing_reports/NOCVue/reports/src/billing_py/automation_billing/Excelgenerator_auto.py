@@ -1,5 +1,4 @@
-import conf1_auto
-import sys
+import configuration_auto as conf1_auto
 import openpyxl
 import pandas as pd 
 from converter_auto import *
@@ -8,7 +7,7 @@ import os
 from datetime import datetime
 import calendar
 #import traceback
-#sys.path.append(os.path.abspath('C:/Users/pavan.vasant/billing_reports/billing_reports/billing_reports/NOCVue/reports/src/billing_py/automation_billing/'))
+
 class Report_Generator:
 
     def __init__(self,mon,year):

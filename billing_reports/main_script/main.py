@@ -3,8 +3,8 @@ import os
 import sys_path
 sys.path.append(os.path.abspath(sys_path.automation))
 sys.path.append(os.path.abspath(sys_path.npca_cli))
-#import Excelgenerator_auto
-import Excelgenerator_CLI
+import Excelgenerator_auto
+#import Excelgenerator_CLI
 #import traceback
 
 if __name__ == '__main__':
@@ -18,11 +18,11 @@ if __name__ == '__main__':
         if not (month.isalpha() and len(month) == 3 and year.isnumeric() and len(year) == 4):
             raise ValueError("The input format is incorrect. Please make sure to enter the month in its abbreviated three-letter format (e.g. JAN, FEB, MAR), followed by the year in four-digit format (e.g. 2023), separated by a space. ")
         
-        # c0 = Excelgenerator_auto.Automation_billing(month ,year)
-        # c0.excel_report()
-        c1 =Excelgenerator_CLI.CLI_Reports(month ,year)
-        c1.excel_report('Tellabs') 
-        c1.excel_report('Adtran')       
+        c0 = Excelgenerator_auto.Automation_billing(month ,year)
+        c0.excel_report()
+        # c1 =Excelgenerator_CLI.CLI_Reports(month ,year)
+        # c1.excel_report('Tellabs') 
+        # c1.excel_report('Adtran')       
           
 
     except Exception as e:
