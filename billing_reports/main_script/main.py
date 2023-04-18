@@ -15,8 +15,8 @@ if __name__ == '__main__':
         
         month ,year = sys.argv[1], sys.argv[2]
 
-        # if not (month.isalpha() and len(month) == 3 and year.isnumeric() and len(year) == 4):
-        #     raise ValueError("The input format is incorrect. Please make sure to enter the month in its abbreviated three-letter format (e.g. JAN, FEB, MAR), followed by the year in four-digit format (e.g. 2023), separated by a space. ")
+        if not (month.isalpha() and len(month) == 3 and year.isnumeric() and len(year) == 4):
+            raise ValueError("The input format is incorrect. Please make sure to enter the month in its abbreviated three-letter format (e.g. JAN, FEB, MAR), followed by the year in four-digit format (e.g. 2023), separated by a space. ")
         
         # c0 = Excelgenerator_auto.Automation_billing(month ,year)
         # c0.excel_report()
