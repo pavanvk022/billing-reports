@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     except Exception as e:
         print(f"Exception  in the main file: {e}")
-        # tb = traceback.extract_tb(e.__traceback__)
+        # tb = traceback.extract_tb(e.__raceback__)
         # filename, line_no, func, line = tb[-1]
         # err_msg = f"Error occurred in line {filename, line_no, func, line}: {e}"
         # print(err_msg)
